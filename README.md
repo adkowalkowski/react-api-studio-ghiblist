@@ -7,11 +7,11 @@ deployment link once deployed
 
 ## Project Description
 
-This project will function as a to-do/watch list for Studio Ghibli (SG) movies. Users will be able to: view all SG movies, search SG movies, and add SG movies to a to-do/watch list. Once movies are on the watch list, users can then click a button that adds these movies to a watched list. 
+This project will function as a to-watch list for Studio Ghibli (SG) movies. Users will be able to: view all SG movies, search SG movies, and add SG movies to a to-watch list. Once movies are on the to-watch list, users can then click a button that adds these movies to a watched list. There will also be an about/how to use page along with a page for users to submit feedback. 
 
 ## API
 
-The Studio Ghibli API requires no key. The main endpoint I'll be using is <https://https://ghibliapi.herokuapp.com/films>. This contains an array of 22 items with each item being a distinct movie -- each of these 22 items contains info like the movie name, director, producer, movie poster, release date, etc.... This data will be used to render data in the application. 
+The Studio Ghibli API requires no key. The main endpoint I'll be using is <https://https://ghibliapi.herokuapp.com/films>. This contains an array of 22 items with each item being a distinct movie -- each of these 22 items contains info like the movie name, description, movie poster, release date, etc.... This data will be used to render data in the application. 
 
 
 ```
@@ -60,21 +60,22 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
-
 #### MVP EXAMPLE
-- Find and use external api 
-- Render data on page 
-- Allow user to interact with the page
+- Use Studio Ghibli external api to render data on page
+- Allow user to add specific movies to a to-watch list
+- Allow users to add movies to a watched list
+- React Router implemented to navigate between different application "pages"
+- Contain 5 components
+- Responsive, mobile first design
 
 #### PostMVP EXAMPLE
 
-- Add localStorage or firebase for storage
+- Add some sort of backend so users' to-watch lists are saved even if the appliation is refreshed
+- Add a review/notes section so users can add their insights on the movie after watching it
+- Add a random movie generator button so users can have the application select what movie they should watch
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
 | Component | Description | 
 | --- | :---: |  
