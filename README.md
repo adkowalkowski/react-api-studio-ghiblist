@@ -79,9 +79,11 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| App | This will include React Router routes and functions for adding and removing movies to the to-watch list | 
+| AllMovies | This will render all the movies on the home page | 
+| WatchList | This will render the header include the nav | 
+| About | This will render the header include the nav |
+| Feedback | This will return HTML   |
 
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
