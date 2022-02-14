@@ -12,7 +12,7 @@ This project will function as a to-watch list for Studio Ghibli (SG) movies. Use
 
 ## API
 
-The Studio Ghibli API requires no key. The main endpoint I'll be using is <https://https://ghibliapi.herokuapp.com/films>. This contains an array of 22 items with each item being a distinct movie -- each of these 22 items contains info like the movie name, description, movie poster, release date, etc.... This data will be used to render data in the application. 
+- [The Studio Ghibli (SG) api](https://ghibliapi.herokuapp.com/) requires no key. The main endpoint I'll be using is <https://ghibliapi.herokuapp.com/films>. This contains an array of 22 items with each item being a distinct movie -- each of these 22 items contains info like the movie name, description, movie poster, release date, etc.... This data will be used to render data in the application. 
 
 
 ```
