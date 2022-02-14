@@ -1,4 +1,5 @@
 # Project Overview
+![](https://64.media.tumblr.com/a2c7267b99f34f1e9fbe2ca65f801ae1/3e6a8ea646afc9c3-7e/s540x810/b8533fb27d00270ad68233695f22c48f62a96f14.gifv)
 
 ## Project Links
 
@@ -7,7 +8,7 @@ deployment link once deployed
 
 ## Project Description
 
-This project will function as a to-watch list for Studio Ghibli (SG) movies. Users will be able to: view all SG movies, search SG movies, and add SG movies to a to-watch list. Once movies are on the to-watch list, users can then click a button that adds these movies to a watched list. There will also be an about/how to use page along with a page for users to submit feedback. 
+This project will function as a to-watch list for Studio Ghibli (SG) movies. Users will be able to: view all SG movies and add SG movies to a to-watch list. Once movies are on the to-watch list, users can then click a button that adds these movies to a watched list. There will also be an about/how to use page along with a page for users to submit feedback. 
 
 ## API
 
@@ -15,6 +16,7 @@ The Studio Ghibli API requires no key. The main endpoint I'll be using is <https
 
 
 ```
+{
 "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
 "title": "Castle in the Sky",
 "original_title": "天空の城ラピュタ",
@@ -46,6 +48,7 @@ The Studio Ghibli API requires no key. The main endpoint I'll be using is <https
 "https://ghibliapi.herokuapp.com/vehicles/4e09b023-f650-4747-9ab9-eacf14540cfb"
 ],
 "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
+},
 
 ```
 
@@ -54,8 +57,9 @@ The Studio Ghibli API requires no key. The main endpoint I'll be using is <https
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [add link to your wireframes]()
-- [add link to your react architecture]()
+- [Mobile wireframe]()
+- [Tablet wireframe]()
+- [Desktop wireframe]()
 
 
 ### MVP/PostMVP - 5min
@@ -71,6 +75,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 #### PostMVP EXAMPLE
 
 - Add some sort of backend so users' to-watch lists are saved even if the appliation is refreshed
+- Allow users to search for a specific movie (maybe include in MVP)
 - Add a review/notes section so users can add their insights on the movie after watching it
 - Add a random movie generator button so users can have the application select what movie they should watch
 
@@ -81,18 +86,28 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 | --- | :---: |  
 | App | This will include React Router routes and functions for adding and removing movies to the to-watch list | 
 | AllMovies | This will render all the movies on the home page | 
+| ?? SingleMovie ?? | I'm not sure if this component is needed yet |
 | WatchList | This will render the header include the nav | 
-| About | This will render the header include the nav |
-| Feedback | This will return HTML   |
+| About | This will return HTML that explains the purpose of the application and a brief description of how to use the application |
+| Feedback | This will return a Google Form where users can submit feedback  |
 
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+Time frames
 
 | Component | Priority | Estimated Time | Time Invetsted | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| AllMovies component | H | 5hrs|  |  |
+| WatchList component | H | 3hrs|  |  |
+| About component | H | 1hr|  |  |
+| Feedback component | H | 1hr|  | |
+| Navbar | H | 2.5hr|  |  |
+| Routes | H | 2.5hr|  |  |
+| Add to watchlist method | H | 2hr|  | |
+| Add to watched method | H | 2hr|  |  |
+| Remove from watchlist method | H | 2hr|  |  |
+| Mobile design | H | 4hr|  | 2.5hrs |
+| Tablet and desktop design | H | 3hr|  |  |
+| Total | H | 28 hrs|  |  |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
