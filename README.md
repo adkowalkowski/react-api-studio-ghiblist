@@ -8,7 +8,7 @@ deployment link once deployed
 
 ## Project Description
 
-This project will function as a to-watch list for Studio Ghibli (SG) movies. Users will be able to: view all SG movies and add SG movies to a to-watch list. Once movies are on the to-watch list, users can then click a button that adds these movies to a watched list. There will also be an about/how to use page along with a page for users to submit feedback. 
+This project will function as a to-watch list for Studio Ghibli (SG) movies. Users will be able to: view all SG movies and add SG movies to a to-watch list. Once movies are on the to-watch list, users can then click a button that checks these items off the watch list. There will also be an about/how to use page along with a page for users to submit feedback. 
 
 ## API
 
@@ -57,9 +57,10 @@ This project will function as a to-watch list for Studio Ghibli (SG) movies. Use
 
 Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-- [Mobile wireframe]()
-- [Tablet wireframe]()
-- [Desktop wireframe]()
+- [Mobile wireframe](https://imgur.com/a/LXEemuZ)
+- [Tablet & Desktop wireframe](https://imgur.com/a/fa32W4H)
+- [React architecture](https://imgur.com/a/Eh4I1Ek)
+
 
 
 ### MVP/PostMVP - 5min
@@ -67,28 +68,31 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 #### MVP EXAMPLE
 - Use Studio Ghibli external api to render data on page
 - Allow user to add specific movies to a to-watch list
-- Allow users to add movies to a watched list
+- Allow users to check items off the to-watch list
 - React Router implemented to navigate between different application "pages"
 - Contain 5 components
 - Responsive, mobile first design
 
 #### PostMVP EXAMPLE
 
+- Allow users to search for a specific movie 
 - Add some sort of backend so users' to-watch lists are saved even if the appliation is refreshed
-- Allow users to search for a specific movie (maybe include in MVP)
 - Add a review/notes section so users can add their insights on the movie after watching it
-- Add a random movie generator button so users can have the application select what movie they should watch
+- Footer
+- Javascript animations
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
 | Component | Description | 
 | --- | :---: |  
-| App | This will include React Router routes and functions for adding and removing movies to the to-watch list | 
+| App | Set up app with React Router | 
+| Main | Contains routes and movie component content | 
+| Header | Renders the nav and header | 
 | AllMovies | This will render all the movies on the home page | 
-| ?? SingleMovie ?? | I'm not sure if this component is needed yet |
-| WatchList | This will render the header include the nav | 
-| About | This will return HTML that explains the purpose of the application and a brief description of how to use the application |
+| SingleMovie | Render more information about the movie and include an add to watchlist button |
+| WatchList | This will contain a .map to render individual movies that users add to the watchlist  | 
+| About | This will return HTML on the homepage that explains the purpose of the application and a brief description of how to use the application |
 | Feedback | This will return a Google Form where users can submit feedback  |
 
 
@@ -103,9 +107,9 @@ Time frames
 | Navbar | H | 2.5hr|  |  |
 | Routes | H | 2.5hr|  |  |
 | Add to watchlist method | H | 2hr|  | |
-| Add to watched method | H | 2hr|  |  |
+| Remove from to-watch method | H | 2hr|  |  |
 | Remove from watchlist method | H | 2hr|  |  |
-| Mobile design | H | 4hr|  | 2.5hrs |
+| Mobile design | H | 4hr|  |  |
 | Tablet and desktop design | H | 3hr|  |  |
 | Total | H | 28 hrs|  |  |
 
