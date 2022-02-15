@@ -17,6 +17,12 @@ function Header() {
      setWatchList(addToWatchList);
      }
 
+  const removeMovie = (object) => {
+      const updatedWatchList = [...watchList]
+      let filteredMovieList = updatedWatchList.filter((item) => item !== object);
+      setWatchList(filteredMovieList);
+  } 
+
 
   return (
     <div className="header">
@@ -38,7 +44,7 @@ function Header() {
           <Route
             path="/watchlist"
             element={
-              <WatchList watchList={watchList}/>
+              <WatchList watchList={watchList} removeMovie={removeMovie}/>
             }
           />
           <Route

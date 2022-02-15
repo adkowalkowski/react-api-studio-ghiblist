@@ -1,8 +1,9 @@
-const WatchList = ({watchList}) => {
+const WatchList = ({watchList, removeMovie}) => {
     let myWatchList = watchList.map((item, index) => {
         return (
-            <div key={index}>
+            <div className="watchListMovie" key={index}>
                 <img src={item.image}></img>
+                <button onClick={(()=>removeMovie(item))}>Remove from watchlist</button>
             </div>
         )
     })

@@ -18,6 +18,11 @@ body {
   margin-bottom: -200px;
 }
 
+.watchListMovie {
+  transform: scale(0.75);
+  margin-bottom: -200px;
+}
+
 nav {
   background: black;
   color: white;
