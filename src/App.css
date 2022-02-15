@@ -10,6 +10,7 @@ body {
 .eachMovie {
   transform: scale(0.75);
   margin-bottom: -200px;
+  cursor:pointer;
 }
 
 .singleMovie {

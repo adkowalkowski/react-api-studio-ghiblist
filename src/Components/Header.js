@@ -3,9 +3,21 @@ import AllMovies from "./AllMovies";
 import Feedback from "./Feedback";
 import WatchList from "./WatchList";
 import { Route, Link, Routes } from "react-router-dom";
+import { useState } from 'react';
 
 
-const Header = () => {
+
+function Header() {
+
+ const [watchList, setWatchList] = useState([]);
+
+ const handleWatchList = (image) => {
+     const addToWatchList = [...watchList]
+     addToWatchList.push({image});
+     setWatchList(addToWatchList);
+     }
+
+
   return (
     <div className="header">
       <nav>
@@ -21,12 +33,12 @@ const Header = () => {
         <Routes>
           <Route
             path="/"
-            element={<AllMovies />}
+            element={<AllMovies handleWatchList={handleWatchList}/>}
           />
           <Route
             path="/watchlist"
             element={
-              <WatchList />
+              <WatchList watchList={watchList}/>
             }
           />
           <Route

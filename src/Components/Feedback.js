@@ -1,6 +1,6 @@
 const Feedback = () => {
     return (
-        <p>watchlist</p>
+        <p>feedback</p>
     )
 }
 

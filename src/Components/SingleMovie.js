@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from './Header';
 
 
 function SingleMovie(props) {
@@ -21,8 +22,10 @@ function SingleMovie(props) {
         <img src={singleMovie.image} />
         <h3>{singleMovie.original_title}</h3>
         <h3>{singleMovie.title} </h3>
-        <p>{singleMovie.description} </p>
-        <button>Add to watchlist</button>
+        <p>Released: {singleMovie.release_date}</p>
+        <p>Running time: {singleMovie.running_time} minutes</p>
+        <p>Description: {singleMovie.description} </p>
+        <button onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button>
       </div>
     );
   }
