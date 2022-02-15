@@ -19,8 +19,8 @@ function SingleMovie(props) {
     singleMovieCard = (
       <div>
         <img src={singleMovie.image} />
-        <h3>{singleMovie.title}</h3>
         <h3>{singleMovie.original_title}</h3>
+        <h3>{singleMovie.title} </h3>
         <p>{singleMovie.description} </p>
         <button>Add to watchlist</button>
       </div>

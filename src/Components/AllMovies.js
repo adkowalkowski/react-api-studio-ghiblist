@@ -3,7 +3,7 @@ import SingleMovie from './SingleMovie';
 
 function AllMovies() {
     const [allMovies, setAllMovies] = useState([]);
-    const [pickMovie, setPickMovie] = useState('')
+    const [pickMovie, setPickMovie] = useState('2baf70d1-42bb-4437-b551-e5fed5a87abe')
     const url = "https://ghibliapi.herokuapp.com/films";
 
     useEffect(() => {
