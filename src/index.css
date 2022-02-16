@@ -12,13 +12,42 @@ code {
     monospace;
 }
 
-img, svg {
-  transform: scale(0.75);
-  margin-bottom: -200px;
+.all-movies {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px;
+}
+
+.home-description {
+  grid-row: 1 / 2;
+  align-self: end;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+.each-movie {
+  transform: scale(0.65);
+  margin-bottom: -250px;
   cursor:pointer;
 }
 
-.singleMovie {
-  /* grid-column: 2/5; */
-  position: fixed; 
+.single-movie  {
+  transform: scale(0.65);
+  margin-top: -200px;
+  margin-bottom: -250px;
 }
+
+
+
+
+
+
+
+/* @media screen and (min-width: 768px) 
+
+
+@media only screen and (min-width: 1024px) 
+
+
+ */

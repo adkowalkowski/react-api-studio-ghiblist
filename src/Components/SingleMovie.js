@@ -16,7 +16,7 @@ function SingleMovie(props) {
     let singleMovieCard = "";
     if (singleMovie.id) {
     singleMovieCard = (
-      <div>
+      <div className="single-movie">
         <img src={singleMovie.image} />
         <h3>{singleMovie.original_title}</h3>
         <h3>{singleMovie.title} </h3>
@@ -27,7 +27,7 @@ function SingleMovie(props) {
       </div>
     );
   }
-  return <div className="singleMovie">{singleMovieCard}</div>
+  return <div className={props.className}>{singleMovieCard}</div>
 
 }
 

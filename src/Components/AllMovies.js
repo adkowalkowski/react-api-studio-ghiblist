@@ -23,9 +23,10 @@ function AllMovies({ handleWatchList }) {
   let moviesArr = allMovies.map((item, index) => {
     return (
       <div key={index}>
-        <img
+        <img className="each-movie"
           onClick={() => {
             handleMovieClick(item.id);
+            window.scrollTo({top: 100, behavior: 'smooth'})
           }}
           src={item.image}
           alt={item.title}
@@ -35,31 +36,15 @@ function AllMovies({ handleWatchList }) {
   });
 
   return (
-    <div className="container">
-  <div className="row">
-    <div className="col">
-    <p>
-         Below are all the feature films from Studio Ghibli. Click on a movie
-          for more information and to add the movie to your watch
-         list.
-       </p>
-       <div classNameName="eachMovie">{moviesArr}</div>
+    <div className="all-movies">
+      <p className="home-description">
+        Below are all the feature films from Studio Ghibli. Click on a movie
+         for more information and to add the movie to your watch
+        list.
+      </p>
+      <SingleMovie className="test" handleWatchList={handleWatchList} id={pickMovie} />
+      {moviesArr}
     </div>
-    <div className="col">
-    <SingleMovie handleWatchList={handleWatchList} id={pickMovie} />
-    </div>
-  </div>
-  </div>
-    
-    // <div classNameName="all-movies">
-    //   <p>
-    //     Below are all the feature films from Studio Ghibli. Click on a movie
-    //      for more information and to add the movie to your watch
-    //     list.
-    //   </p>
-    //   <SingleMovie handleWatchList={handleWatchList} id={pickMovie} />
-    //   {moviesArr}
-    // </div>
   );
 }
 
