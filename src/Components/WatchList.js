@@ -1,14 +1,17 @@
 const WatchList = ({watchList, removeMovie}) => {
     let myWatchList = watchList.map((item, index) => {
         return (
-            <div className="watchListMovie" key={index}>
+            <div key={index}>
                 <img src={item.image}></img>
                 <button onClick={(()=>removeMovie(item))}>Remove from watchlist</button>
             </div>
         )
     })
-    return <div>{myWatchList}</div>
-    
+    if (myWatchList.length < 1) {
+        return <p className="watchlist-empty">Your watch list is empty!</p>
+    } else {
+        return <div className="watch-list">{myWatchList}</div>
+    }
 }
 
 export default WatchList;

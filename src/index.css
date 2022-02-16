@@ -4,13 +4,13 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   -moz-osx-font-smoothing: grayscale;
 }
-
+ 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
+} 
 
 .all-movies {
   display: grid;
@@ -20,22 +20,34 @@ code {
 
 .home-description {
   grid-row: 1 / 2;
-  align-self: end;
+  place-self: center end;
+  margin-top: 50px;
   padding-left: 10%;
   padding-right: 10%;
+  font-size: 20px;
 }
 
 
 .each-movie {
   transform: scale(0.65);
-  margin-bottom: -250px;
+  margin-bottom: -280px;
   cursor:pointer;
 }
 
 .single-movie  {
   transform: scale(0.65);
   margin-top: -200px;
-  margin-bottom: -250px;
+  margin-bottom: -315px;
+  font-size: 20px;
+}
+
+.watchlist-empty {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.watch-list {
+  transform: scale(0.65);
 }
 
 
@@ -44,10 +56,14 @@ code {
 
 
 
-/* @media screen and (min-width: 768px) 
+@media screen and (min-width: 768px) {
+
+}
 
 
-@media only screen and (min-width: 1024px) 
+@media only screen and (min-width: 1024px) {
+  
+}
 
 
- */
+

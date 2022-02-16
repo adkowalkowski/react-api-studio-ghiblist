@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SingleMovie from "./SingleMovie";
+import $ from 'jquery'; 
+
 
 function AllMovies({ handleWatchList }) {
   const [allMovies, setAllMovies] = useState([]);
@@ -26,7 +28,9 @@ function AllMovies({ handleWatchList }) {
         <img className="each-movie"
           onClick={() => {
             handleMovieClick(item.id);
-            window.scrollTo({top: 100, behavior: 'smooth'})
+            if ($(window).width() < 1024) {
+                window.scrollTo({top: 125, behavior: 'smooth'})
+            } 
           }}
           src={item.image}
           alt={item.title}

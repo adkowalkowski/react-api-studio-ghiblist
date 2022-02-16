@@ -22,12 +22,17 @@ function Header() {
 
   return (
     <div className="header">
-<nav class="navbar fixed-top navbar-dark bg-dark">
+      <nav class="navbar fixed-top navbar-dark bg-dark">
         <div className="container-fluid">
-        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
-          <h1>Studio Ghiblist</h1>
-        </Link>
-        <Link to="/watchlist" style={{ textDecoration: 'none', color: 'white' }}>Watch List</Link>
+          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            <h1>Studio Ghiblist</h1>
+          </Link>
+          <Link
+            to="/watchlist"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Watch List
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -41,40 +46,39 @@ function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-            
-        <Link to="/feedback" style={{ textDecoration: 'none', color: 'white' }}>Feedback</Link>
-        <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>About the Creator</Link>
+              <Link
+                to="/feedback"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                Feedback
+              </Link>
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                About the Creator
+              </Link>
             </div>
           </div>
         </div>
       </nav>
-      
+
       <main>
         <Routes>
           <Route
             path="/"
-            element={<AllMovies handleWatchList={handleWatchList}/>}
+            element={<AllMovies handleWatchList={handleWatchList} />}
           />
           <Route
             path="/watchlist"
             element={
-              <WatchList watchList={watchList} removeMovie={removeMovie}/>
+              <WatchList watchList={watchList} removeMovie={removeMovie} />
             }
           />
-          <Route
-            path="/feedback"
-            element={
-              <Feedback />
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <About />
-            }
-          />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/about" element={<About />} />
         </Routes>
-      </main> 
+      </main>
     </div>
   );
 }
