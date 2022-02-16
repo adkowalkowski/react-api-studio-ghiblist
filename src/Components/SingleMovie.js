@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header';
-
 
 function SingleMovie(props) {
     const [singleMovie, setSingleMovie] = useState({});
@@ -35,3 +33,16 @@ function SingleMovie(props) {
 
 export default SingleMovie; 
 
+
+
+
+    //attempting boostrap card
+/* <img src={singleMovie.image} className="card-img-top" alt="..."></img>
+<div className="card-body">
+<h3 className="card-title">{singleMovie.original_title}</h3>
+  <h3 className="card-title">{singleMovie.title}</h3>
+  <p className="card-text">Released: {singleMovie.release_date}</p>
+  <p className="card-text">Running time: {singleMovie.running_time} minutes</p>
+  <p className="card-text">Description: {singleMovie.description} </p>
+  <button className="card-button" onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button>
+</div> */

@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img, svg {
+  transform: scale(0.75);
+  margin-bottom: -200px;
+  cursor:pointer;
+}
+
+.singleMovie {
+  /* grid-column: 2/5; */
+  position: fixed; 
+}

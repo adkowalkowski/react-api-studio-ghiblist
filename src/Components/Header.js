@@ -3,38 +3,52 @@ import AllMovies from "./AllMovies";
 import Feedback from "./Feedback";
 import WatchList from "./WatchList";
 import { Route, Link, Routes } from "react-router-dom";
-import { useState } from 'react';
-
-
+import { useState } from "react";
 
 function Header() {
+  const [watchList, setWatchList] = useState([]);
 
- const [watchList, setWatchList] = useState([]);
-
- const handleWatchList = (image) => {
-     const addToWatchList = [...watchList]
-     addToWatchList.push({image});
-     setWatchList(addToWatchList);
-     }
+  const handleWatchList = (image) => {
+    const addToWatchList = [...watchList];
+    addToWatchList.push({ image });
+    setWatchList(addToWatchList);
+  };
 
   const removeMovie = (object) => {
-      const updatedWatchList = [...watchList]
-      let filteredMovieList = updatedWatchList.filter((item) => item !== object);
-      setWatchList(filteredMovieList);
-  } 
-
+    const updatedWatchList = [...watchList];
+    let filteredMovieList = updatedWatchList.filter((item) => item !== object);
+    setWatchList(filteredMovieList);
+  };
 
   return (
     <div className="header">
-      <nav>
-        <Link to="/">
+<nav class="navbar fixed-top navbar-dark bg-dark">
+        <div className="container-fluid">
+        <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
           <h1>Studio Ghiblist</h1>
         </Link>
-        <Link to="/watchlist">Watch List</Link>
-        <Link to="/feedback">Feedback</Link>
-        <Link to="/about">About the Creator</Link>
+        <Link to="/watchlist" style={{ textDecoration: 'none', color: 'white' }}>Watch List</Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
+            
+        <Link to="/feedback" style={{ textDecoration: 'none', color: 'white' }}>Feedback</Link>
+        <Link to="/about" style={{ textDecoration: 'none', color: 'white' }}>About the Creator</Link>
+            </div>
+          </div>
+        </div>
       </nav>
-
+      
       <main>
         <Routes>
           <Route
@@ -60,9 +74,9 @@ function Header() {
             }
           />
         </Routes>
-      </main>
+      </main> 
     </div>
   );
-};
+}
 
 export default Header;
