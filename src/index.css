@@ -61,6 +61,10 @@ code {
   padding-right: 10%;
 }
 
+.writing p {
+  margin: 2.5%;
+}
+
 .watchlist-empty {
   margin-top: 100px;
   text-align: center;
@@ -99,9 +103,32 @@ code {
   .home-description {
     font-size: 25px;
   }
+  .single-movie img {
+    float: left; 
+    padding-top: 5%;
+    padding-left: 10%; 
+    padding-right: 5%;
+    padding-bottom: 10%; 
+    /* transform: scale(0.75); */
+  }
+  .single-movie .writing {
+    text-align: left;
+    padding-top: 5%; 
+    padding-right: 0%; 
+  }
+  
   .feedback p {
     font-size: 25px;
-  
+   }
+
+  .writing p {
+    margin: 2.5%; 
+  }
+
+   .watch-list img {
+     width: 45%; 
+   }
+   .watch-list button {
    }
 
 }
