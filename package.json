@@ -1,5 +1,6 @@
 {
   "name": "studio-ghiblist",
+  "homepage": "https://adkowalkowski.github.io/react-api-studio-ghiblist/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
