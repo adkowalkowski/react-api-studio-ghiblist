@@ -26,28 +26,15 @@ function Header() {
       <nav className="navbar fixed-top navbar-dark bg-dark navbar-custom">
         <div className="container-fluid">
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <h3>Studio Ghiblist</h3>
+            Studio Ghiblist
           </Link>
           <Link
             to="/watchlist"
             style={{ textDecoration: "none", color: "white" }}
           >
-            <h3>Watch List</h3>
+            Watch List
           </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <Link
+          <Link
                 to="/feedback"
                 style={{ textDecoration: "none", color: "white" }}
               >
@@ -59,8 +46,6 @@ function Header() {
               >
                 About the Creator
               </Link>
-            </div>
-          </div>
         </div>
       </nav>
 
