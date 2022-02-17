@@ -67,7 +67,8 @@ code {
 @media screen and (min-width: 768px) {
   .each-movie {
     /* transform: scale(0.45); */
-    /* margin-bottom: -450px; */
+    margin-top: 500px;
+    margin-bottom: -750px;
     display: inline-block;
     /* display: none;  */
   }
