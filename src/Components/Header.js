@@ -31,7 +31,7 @@ function Header() {
             to="/watchlist"
             style={{ textDecoration: "none", color: "white" }}
           >
-            Watch List
+            <h1>Watch List</h1>
           </Link>
           <button
             className="navbar-toggler"
