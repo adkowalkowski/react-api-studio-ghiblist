@@ -17,6 +17,7 @@ code {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 200px;
+  font-size: 50px;
 }
 
 .home-description {
@@ -30,16 +31,24 @@ code {
 
 
 .each-movie {
-  transform: scale(0.65);
-  margin-bottom: -280px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 25px;
+  display: block;
   cursor:pointer;
 }
 
-.single-movie  {
-  transform: scale(0.65);
-  margin-top: -200px;
-  margin-bottom: -315px;
-  font-size: 20px;
+.single-movie img  {
+  /* transform: scale(0.65); */
+  width: 60%;
+  margin: auto;
+  display: block;
+  /* margin-top: -200px;
+  margin-bottom: -315px; */
+}
+
+.single-movie .writing {
+  font-size: 15px; 
 }
 
 .watchlist-empty {
@@ -47,9 +56,20 @@ code {
   text-align: center;
 }
 
-.watch-list {
-  transform: scale(0.65);
+
+
+.watch-list img {
+  width: 60%;
+  margin: auto;
+  margin-top: 100px; 
+  display: block;
 }
+
+.watch-list button {
+  margin: auto;
+  display: block;
+}
+
 
 
 
@@ -57,43 +77,45 @@ code {
 
 
 @media screen and (max-width: 768px) {
- .navbar-custom {
+
+  .navbar-custom {
  
- }
+  }
+ 
 }
 
 
 
 @media screen and (min-width: 768px) {
-  .each-movie {
+  /* .each-movie { */
     /* transform: scale(0.45); */
-    margin-top: 500px;
+    /* margin-top: 500px;
     margin-bottom: -750px;
-    display: inline-block;
+    display: inline-block; */
     /* display: none;  */
-  }
   
-  .single-movie {
-    /* transform: scale(0.45); */
+  
+   /* .single-movie { 
+    transform: scale(0.45); 
     margin-top: -300px;
     margin-bottom: -500px;
-  }
+  } 
 
 
   .test img {
     display: flex;  
     margin-right: 700px; 
     margin-top: 200px; 
-  }
+  } */
 
-  .test .writing {
-    display: flex; 
+  /* .test .writing {  */
+    /* display: flex; 
     flex-grow: 100;
     flex-direction: column;
     margin-left: 700px; 
     margin-top: -825px;
     font-size: 30px; 
-  }
+  } */ 
 
 }
 

@@ -31,6 +31,10 @@ function Header() {
           <Link
             to="/watchlist"
             style={{ textDecoration: "none", color: "white" }}
+            onClick={() => {
+                window.scrollTo({top: 0})
+              } 
+            }
           >
             Watch List
           </Link>
