@@ -9,7 +9,7 @@ const Feedback = () => {
       </p>
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScHfYWePjJY-zUpd1RMW7fhQMLS4KnthE6Bu6jYm3-w_p0DYQ/viewform?embedded=true"
-        width="640"
+        width="100%"
         height="600"
         frameborder="0"
         marginheight="0"

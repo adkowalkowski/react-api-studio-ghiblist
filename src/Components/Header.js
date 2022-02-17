@@ -41,6 +41,10 @@ function Header() {
           <Link
                 to="/feedback"
                 style={{ textDecoration: "none", color: "white" }}
+                onClick={() => {
+                  window.scrollTo({top: 0})
+                } 
+              }
               >
                 Feedback
               </Link>

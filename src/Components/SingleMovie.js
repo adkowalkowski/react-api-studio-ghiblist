@@ -20,8 +20,8 @@ function SingleMovie(props) {
       <div className="single-movie">
         <img src={singleMovie.image} />
         <span className="writing">
-        <h3>{singleMovie.original_title}</h3>
-        <h3>{singleMovie.title} </h3>
+        <h5>{singleMovie.original_title}</h5>
+        <h5>{singleMovie.title} </h5>
         <p>Released: {singleMovie.release_date}</p>
         <p>Running time: {singleMovie.running_time} minutes</p>
         <p>Description: {singleMovie.description} </p>
@@ -42,8 +42,8 @@ export default SingleMovie;
     //attempting boostrap card
 /* <img src={singleMovie.image} className="card-img-top" alt="..."></img>
 <div className="card-body">
-<h3 className="card-title">{singleMovie.original_title}</h3>
-  <h3 className="card-title">{singleMovie.title}</h3>
+<h5 className="card-title">{singleMovie.original_title}</h5>
+  <h5 className="card-title">{singleMovie.title}</h5>
   <p className="card-text">Released: {singleMovie.release_date}</p>
   <p className="card-text">Running time: {singleMovie.running_time} minutes</p>
   <p className="card-text">Description: {singleMovie.description} </p>
