@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../index.css";
 
 function SingleMovie(props) {
     const [singleMovie, setSingleMovie] = useState({});
@@ -18,12 +19,14 @@ function SingleMovie(props) {
     singleMovieCard = (
       <div className="single-movie">
         <img src={singleMovie.image} />
+        <span className="writing">
         <h3>{singleMovie.original_title}</h3>
         <h3>{singleMovie.title} </h3>
         <p>Released: {singleMovie.release_date}</p>
         <p>Running time: {singleMovie.running_time} minutes</p>
         <p>Description: {singleMovie.description} </p>
         <button onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button>
+        </span>
       </div>
     );
   }

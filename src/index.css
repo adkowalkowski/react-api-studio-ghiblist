@@ -12,6 +12,7 @@ code {
     monospace;
 } 
 
+
 .all-movies {
   display: grid;
   grid-template-columns: 1fr;
@@ -50,15 +51,48 @@ code {
   transform: scale(0.65);
 }
 
-.navbar h1 {
 
+
+
+
+
+@media screen and (max-width: 768px) {
+ .navbar-custom {
+ 
+ }
 }
 
 
 
-
-
 @media screen and (min-width: 768px) {
+  .each-movie {
+    /* transform: scale(0.45); */
+    /* margin-bottom: -450px; */
+    display: inline-block;
+    /* display: none;  */
+  }
+  
+  .single-movie {
+    /* transform: scale(0.45); */
+    margin-top: -300px;
+    margin-bottom: -500px;
+  }
+
+
+  .test img {
+    display: flex;  
+    margin-right: 700px; 
+    margin-top: 200px; 
+  }
+
+  .test .writing {
+    display: flex; 
+    flex-grow: 100;
+    flex-direction: column;
+    margin-left: 700px; 
+    margin-top: -825px;
+    font-size: 30px; 
+  }
 
 }
 

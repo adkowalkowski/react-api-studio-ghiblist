@@ -4,6 +4,7 @@ import Feedback from "./Feedback";
 import WatchList from "./WatchList";
 import { Route, Link, Routes } from "react-router-dom";
 import { useState } from "react";
+import '../index.css';
 
 function Header() {
   const [watchList, setWatchList] = useState([]);
@@ -22,16 +23,16 @@ function Header() {
 
   return (
     <div className="header">
-      <nav class="navbar fixed-top navbar-dark bg-dark">
+      <nav className="navbar fixed-top navbar-dark bg-dark navbar-custom">
         <div className="container-fluid">
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <h1>Studio Ghiblist</h1>
+            <h3>Studio Ghiblist</h3>
           </Link>
           <Link
             to="/watchlist"
             style={{ textDecoration: "none", color: "white" }}
           >
-            <h1>Watch List</h1>
+            <h3>Watch List</h3>
           </Link>
           <button
             className="navbar-toggler"

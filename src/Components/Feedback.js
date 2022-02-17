@@ -1,3 +1,5 @@
+import "../index.css";
+
 const Feedback = () => {
   return (
     <div className="feedback">

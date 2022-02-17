@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SingleMovie from "./SingleMovie";
 import $ from 'jquery'; 
+import "../index.css";
 
 
 function AllMovies({ handleWatchList }) {

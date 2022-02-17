@@ -1,3 +1,5 @@
+import "../index.css";
+
 const WatchList = ({watchList, removeMovie}) => {
     let myWatchList = watchList.map((item, index) => {
         return (
