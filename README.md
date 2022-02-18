@@ -99,7 +99,7 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 Time frames
 
 | Component | Priority | Estimated Time | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
+| --- | :---: |  :---: | :---: | 
 | AllMovies component | H | 5hrs| 2hrs | 
 | WatchList component | H | 3hrs| 2hrs | 
 | About component | H | 1hr| 0.5hr | 
