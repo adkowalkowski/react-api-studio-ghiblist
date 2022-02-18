@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-api-studio-ghiblist/static/css/main.b6a60d9a.css",
-    "main.js": "/react-api-studio-ghiblist/static/js/main.5475d7ad.js",
+    "main.css": "/react-api-studio-ghiblist/static/css/main.37df5a15.css",
+    "main.js": "/react-api-studio-ghiblist/static/js/main.8d4dcc2f.js",
     "static/js/787.9318fe23.chunk.js": "/react-api-studio-ghiblist/static/js/787.9318fe23.chunk.js",
     "index.html": "/react-api-studio-ghiblist/index.html",
-    "main.b6a60d9a.css.map": "/react-api-studio-ghiblist/static/css/main.b6a60d9a.css.map",
-    "main.5475d7ad.js.map": "/react-api-studio-ghiblist/static/js/main.5475d7ad.js.map",
+    "main.37df5a15.css.map": "/react-api-studio-ghiblist/static/css/main.37df5a15.css.map",
+    "main.8d4dcc2f.js.map": "/react-api-studio-ghiblist/static/js/main.8d4dcc2f.js.map",
     "787.9318fe23.chunk.js.map": "/react-api-studio-ghiblist/static/js/787.9318fe23.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6a60d9a.css",
-    "static/js/main.5475d7ad.js"
+    "static/css/main.37df5a15.css",
+    "static/js/main.8d4dcc2f.js"
   ]
 }
