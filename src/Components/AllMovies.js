@@ -43,7 +43,7 @@ function AllMovies({ handleWatchList }) {
   return (
     <div className="all-movies">
       <p className="home-description">
-        Below are all the feature films from Studio Ghibli. Click on a movie
+        Scroll below to view all the feature films from Studio Ghibli. Click on a movie
          for more information and to add the movie to your watch
         list.
       </p>

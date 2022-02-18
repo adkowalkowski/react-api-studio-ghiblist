@@ -92,6 +92,17 @@ code {
   text-align: left;   
 }
 
+.about p {
+ 
+    margin-top: 100px;
+    margin-bottom: 25px; 
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 17px;
+    text-align: left;   
+  
+}
+
 
 
 
@@ -128,40 +139,33 @@ code {
 
    .watch-list img {
      padding-left: 0%; 
-      display: flex; 
      width: 45%; 
+   }
+
+   .about p {
+    font-size: 25px;
    }
 }
 
 
 @media only screen and (min-width: 1024px) {
   .home-description {
-    
+    display: flex; 
+    justify-content: flex-start;
+    margin-top: 15%;
+    margin-right: 50%;
 
   }
   .single-movie   {
-    /* transform: scale(0.65); */
     width: 55%;
     margin: auto;
     margin-top: -100px;
     display: block;
     right: 0; 
     position: fixed; 
-    /* margin-top: -200px;
-    margin-bottom: -315px; */
   }
   
-  /* .single-movie .writing {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    display: block; 
-    font-size: 15px; 
-    margin-bottom: 50px; 
-    padding-left: 10%;
-    padding-right: 10%;
-    right: 0; 
-  } */
+  
   .writing p {
     margin: 2.5%;
     text-align: left;
@@ -169,10 +173,14 @@ code {
   }
   .each-movie {
     transform: scale(0.75);
-    margin-bottom: -200px;
+    margin-bottom: -12%;
     padding-left: 5%; 
     width: 45%;
     float: left; 
+  }
+  .watch-list img {
+    padding-left: 0%; 
+    width: 30%; 
   }
 }
 

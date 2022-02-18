@@ -5,7 +5,7 @@ const WatchList = ({watchList, removeMovie}) => {
         return (
             <div className="watch-list" key={index}>
                 <img src={item.image}></img>
-                <button onClick={(()=>removeMovie(item))}>Remove from my watch list</button>
+                <button class="btn btn-primary" onClick={(()=>removeMovie(item))}>Remove from my watch list</button>
             </div>
         )
     })
