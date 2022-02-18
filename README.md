@@ -98,30 +98,36 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 
 Time frames
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
+| Component | Priority | Estimated Time | Actual Time 
 | --- | :---: |  :---: | :---: | :---: |
-| AllMovies component | H | 5hrs|  |  |
-| WatchList component | H | 3hrs|  |  |
-| About component | H | 1hr|  |  |
-| Feedback component | H | 1hr|  | |
-| Navbar | H | 2.5hr|  |  |
-| Routes | H | 2.5hr|  |  |
-| Add to watchlist method | H | 2hr|  | |
-| Remove from to-watch method | H | 2hr|  |  |
-| Remove from watchlist method | H | 2hr|  |  |
-| Mobile design | H | 4hr|  |  |
-| Tablet and desktop design | H | 3hr|  |  |
-| Total | H | 28 hrs|  |  |
+| AllMovies component | H | 5hrs| 2hrs | 
+| WatchList component | H | 3hrs| 2hrs | 
+| About component | H | 1hr| 0.5hr | 
+| Feedback component | H | 1hr| 1hr |
+| Navbar | H | 2.5hr| 8hrs | 
+| Routes | H | 2.5hr| 1.5hr | 
+| Add to watchlist method | H | 2hr| 3hr |
+| Remove from watchlist method | H | 2hr| 1hr | 
+| Mobile design | H | 4hr| 4hr | 
+| Tablet and desktop design | H | 3hr| 5hr | 
+| Total | H | 28 hrs| 28hrs |  
 
 ## Additional Libraries
  Bootstrap, jquery
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+I have an onClick event that scrolls users to the top of the page when they click on a movie. I didn't want this to happen on desktop, though, so I added an if else statement to prevent the function from happening on desktop.  
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+<img className="each-movie"
+          onClick={() => {
+            handleMovieClick(item.id);
+            if ($(window).width() < 1024) {
+                window.scrollTo({top: 125, behavior: 'smooth'})
+            } 
+          }}
+          src={item.image}
+          alt={item.title}
+        ></img>
 ```
