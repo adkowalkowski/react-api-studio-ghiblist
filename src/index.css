@@ -56,13 +56,14 @@ code {
   display: block; 
   font-size: 15px; 
   margin-bottom: 50px; 
-  line-height: initial;
   padding-left: 10%;
   padding-right: 10%;
 }
 
 .writing p {
   margin: 2.5%;
+  text-align: left;
+  padding-left: 5%;
 }
 
 .watchlist-empty {
@@ -126,16 +127,53 @@ code {
   }
 
    .watch-list img {
+     padding-left: 0%; 
+      display: flex; 
      width: 45%; 
    }
-   .watch-list button {
-   }
-
 }
 
 
 @media only screen and (min-width: 1024px) {
+  .home-description {
+    
+
+  }
+  .single-movie   {
+    /* transform: scale(0.65); */
+    width: 55%;
+    margin: auto;
+    margin-top: -100px;
+    display: block;
+    right: 0; 
+    position: fixed; 
+    /* margin-top: -200px;
+    margin-bottom: -315px; */
+  }
   
+  /* .single-movie .writing {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: block; 
+    font-size: 15px; 
+    margin-bottom: 50px; 
+    padding-left: 10%;
+    padding-right: 10%;
+    right: 0; 
+  } */
+  .writing p {
+    margin: 2.5%;
+    text-align: left;
+    padding-left: 5%;
+  }
+  .each-movie {
+    transform: scale(0.75);
+    margin-bottom: -200px;
+    padding-left: 5%; 
+    width: 45%;
+    float: left; 
+  }
 }
 
 
