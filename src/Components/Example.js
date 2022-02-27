@@ -12,7 +12,7 @@ function Example() {
     return (
       <>
         <Button variant="primary" onClick={handleShow}>
-          Add movie to watch list
+          Add to watch list
         </Button>
   
         <Modal show={show} onHide={handleClose}>
