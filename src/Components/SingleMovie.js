@@ -25,7 +25,9 @@ function SingleMovie(props) {
         <p>Released: {singleMovie.release_date}</p>
         <p>Running time: {singleMovie.running_time} minutes</p>
         <p>Description: {singleMovie.description} </p>
-        <button class="btn btn-primary" onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button>
+        <button type="button" className="btn btn-primary" onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button>
+        
+        
         </span>
       </div>
     );
