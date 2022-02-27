@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../index.css";
+import Example from "./Example";
 
 function SingleMovie(props) {
     const [singleMovie, setSingleMovie] = useState({});
@@ -19,16 +20,15 @@ function SingleMovie(props) {
     singleMovieCard = (
       <div className="single-movie">
         <img src={singleMovie.image} />
-        <span className="writing">
+        <div className="writing">
         <h5>{singleMovie.original_title}</h5>
         <h5>{singleMovie.title} </h5>
         <p>Released: {singleMovie.release_date}</p>
         <p>Running time: {singleMovie.running_time} minutes</p>
         <p>Description: {singleMovie.description} </p>
-        <button type="button" className="btn btn-primary" onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button>
-        
-        
-        </span>
+        {/* <button type="button" className="btn btn-primary" onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button> */}
+        <Example />
+        </div>
       </div>
     );
   }
