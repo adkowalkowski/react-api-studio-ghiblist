@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-api-studio-ghiblist/static/css/main.f0b8df68.css",
-    "main.js": "/react-api-studio-ghiblist/static/js/main.41cb6fc6.js",
+    "main.js": "/react-api-studio-ghiblist/static/js/main.129e0ecc.js",
     "static/js/787.9318fe23.chunk.js": "/react-api-studio-ghiblist/static/js/787.9318fe23.chunk.js",
     "index.html": "/react-api-studio-ghiblist/index.html",
     "main.f0b8df68.css.map": "/react-api-studio-ghiblist/static/css/main.f0b8df68.css.map",
-    "main.41cb6fc6.js.map": "/react-api-studio-ghiblist/static/js/main.41cb6fc6.js.map",
+    "main.129e0ecc.js.map": "/react-api-studio-ghiblist/static/js/main.129e0ecc.js.map",
     "787.9318fe23.chunk.js.map": "/react-api-studio-ghiblist/static/js/787.9318fe23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0b8df68.css",
-    "static/js/main.41cb6fc6.js"
+    "static/js/main.129e0ecc.js"
   ]
 }
