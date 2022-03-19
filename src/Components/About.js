@@ -9,7 +9,7 @@ const About = () => {
         reliable results. 
         <br></br>
         <br></br>
-        Studio Ghiblist was created during my time at General Assembly with the intent to leverage both React.js and Studio Ghbili's API. <a target="_blank" href="https://github.com/adkowalkowski/react-api-studio-ghiblist">Click here</a> to view the Github repository for this project. 
+        Studio Ghiblist was created during my time at General Assembly with the intent to leverage both React.js and Studio Ghibli's API. <a target="_blank" href="https://github.com/adkowalkowski/react-api-studio-ghiblist">Click here</a> to view the Github repository for this project. 
         <br></br>
         <br></br>
         To find out more about me and my work, check out my <a target="_blank" href="https://adkowalkowski.github.io/portfolio/">portfolio</a>, <a target="_blank" href="https://github.com/adkowalkowski">Github</a>, and <a target="_blank" href="https://www.linkedin.com/in/anthony-kowalkowski/">LinkedIn</a>.
