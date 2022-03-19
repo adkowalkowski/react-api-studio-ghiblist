@@ -5,7 +5,6 @@ import WatchList from "./WatchList";
 import { Route, Link, Routes } from "react-router-dom";
 import { useState } from "react";
 
-
 function Header() {
   const [watchList, setWatchList] = useState([]);
 
@@ -13,6 +12,7 @@ function Header() {
     const addToWatchList = [...watchList];
     addToWatchList.push({ image });
     setWatchList(addToWatchList);
+    console.log(watchList)
   };
 
   const removeMovie = (object) => {
