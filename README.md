@@ -131,3 +131,8 @@ I have an onClick event that scrolls users to the top of the page when they clic
           alt={item.title}
         ></img>
 ```
+
+## Future Direction
+To-watch and watched list
+New fonts and logo
+Store on backend
