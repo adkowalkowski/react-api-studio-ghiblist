@@ -103,13 +103,15 @@ code {
   
 }
 
+.paragraph {
+  font-size: 25px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
 
-
-
-
-
-
-
+.paragraph a {
+  text-decoration: none;
+}
 
 @media screen and (min-width: 768px) {
   .home-description {

@@ -44,8 +44,7 @@ function AllMovies({ handleWatchList }) {
     <div className="all-movies">
       <p className="home-description">
         Scroll below to view all the feature films from Studio Ghibli. Click on a movie
-         for more information and to add the movie to your watch
-        list.
+         for more information and to add the movie to your watchlist.
       </p>
       <SingleMovie className="test" handleWatchList={handleWatchList} id={pickMovie} />
       {moviesArr}

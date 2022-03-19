@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import "../index.css";
 
 function SingleMovie(props) {
-    const [singleMovie, setSingleMovie] = useState({});
-    
     const text = "Add to watchlist"
     const [buttonText, setButtonText] = useState(text);
 
@@ -14,7 +12,7 @@ function SingleMovie(props) {
       return () => clearTimeout(timer);
     }, [buttonText])
 
-
+    const [singleMovie, setSingleMovie] = useState({});
     const url = "https://ghibliapi.herokuapp.com/films";
 
     useEffect(() => {
@@ -40,9 +38,6 @@ function SingleMovie(props) {
         <button type="button" className="btn btn-primary" onClick={() => {setButtonText("Added"); props.handleWatchList(singleMovie.image)}} >
           {buttonText}
         </button>
-        {/* <MovieModal /> */}
-        {/* <span className='test1' onClick={() => props.handleWatchList(singleMovie.image)}><MovieModal /></span> */}
-        {/* <button type="button" className="btn btn-primary" onClick={() => props.handleWatchList(singleMovie.image)}>Add to watchlist</button> */}
         </div>
       </div>
     );
