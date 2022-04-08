@@ -1,10 +1,9 @@
 # Project Overview
 ![](https://64.media.tumblr.com/a2c7267b99f34f1e9fbe2ca65f801ae1/3e6a8ea646afc9c3-7e/s540x810/b8533fb27d00270ad68233695f22c48f62a96f14.gifv)
 
-## Project Links
+## Deployed Link
 
-- [Github repo](https://github.com/adkowalkowski/react-api-studio-ghiblist)
-deployment link once deployed
+Visit [Studio Ghiblist](https://adkowalkowski.github.io/react-api-studio-ghiblist/)
 
 ## Project Description
 
@@ -55,17 +54,14 @@ This project will function as a to-watch list for Studio Ghibli (SG) movies. Use
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
-
 - [Mobile wireframe](https://imgur.com/a/LXEemuZ)
 - [Tablet & Desktop wireframe](https://imgur.com/a/fa32W4H)
 - [React architecture](https://imgur.com/a/Eh4I1Ek)
 
 
+### Minimum Viable Product (MVP) and Future Directions 
 
-### MVP/PostMVP - 5min
-
-#### MVP EXAMPLE
+#### MVP 
 - Use Studio Ghibli external api to render data on page
 - Allow user to add specific movies to a to-watch list
 - Allow users to check items off the to-watch list
@@ -73,16 +69,17 @@ Upload images of wireframe to cloudinary and add the link here with a descriptio
 - Contain 5 components
 - Responsive, mobile first design
 
-#### PostMVP EXAMPLE
+#### Future Directions 
 
 - Allow users to search for a specific movie 
-- Add some sort of backend so users' to-watch lists are saved even if the appliation is refreshed
+- Implement a 'to-watch- list and a 'watched-list'
+- Add backend so users' lists are saved even if the appliation is refreshed
 - Add a review/notes section so users can add their insights on the movie after watching it
 - Footer
+- Update fonts and design
 - Javascript animations
 
 ## Components
-##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
 
 | Component | Description | 
 | --- | :---: |  
@@ -132,7 +129,3 @@ I have an onClick event that scrolls users to the top of the page when they clic
         ></img>
 ```
 
-## Future Direction
-To-watch and watched list
-New fonts and logo
-Store on backend
